@@ -414,6 +414,20 @@ nav h3{
     
     border-radius: 25px;
 }
+@media screen and (max-width:576px){
+    .single-photo{
+        /* flex-wrap: nowrap; */
+        flex-direction: column;
+        gap: 20px;
+    }
+    .single-photo img{
+        width:100%;
+}
+    .sec-4{
+        max-width: 85%;
+    }
+}
+/* Section-5  */
 
 
 
