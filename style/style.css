@@ -379,6 +379,7 @@ nav h3{
     display: flex;
     flex-direction: column;
     
+    
 }
 .sec-4-con{
     display: flex;
@@ -392,18 +393,24 @@ nav h3{
     text-align: center;
 }
 .photos{
-    margin: 30px;
+    /* margin: 30px; */
     background-color: #222222;
     border-radius: 25px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 20px;
 }
 .single-photo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+   
+       
 }
 .single-photo img{
-    width: 30%;
-    height: 20%;
+    width:33%;
+    
+    
     
     border-radius: 25px;
 }
