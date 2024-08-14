@@ -244,7 +244,7 @@ nav h3{
         flex-direction: column;
         gap: 30px;
         max-width: 100%;
-        margin-top: 50px;
+        margin-top: 40px;
     }
     .text .bnr-title{
         color: white;
@@ -265,6 +265,7 @@ nav h3{
     .buttons{
         display: flex;
         justify-content: space-between;
+       
     }
     .top{
         bottom: 500px;
@@ -273,6 +274,9 @@ nav h3{
     .bottom{
         left: 20px;
         bottom: 290px;
+    }
+    .join-now, .download{
+        max-width: 100%;
     }
     
 }
@@ -358,6 +362,7 @@ nav h3{
     .sec-2{
         flex-direction: column;
         gap: 20px;
+        max-width: 85%;
         }
         .sec-2-con{
             max-width: 80%;
