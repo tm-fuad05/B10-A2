@@ -30,7 +30,8 @@ a{
 
 /* Header  */
 header{
-    height: 600px;
+    width: 100%;
+    min-height: 100vh;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     background-color: gray;
 }
@@ -69,6 +70,13 @@ nav h3{
     color: #E6533C;
     font-style: italic;
 }
+.fa-solid {
+    color: white;
+    font-size: 27px;
+}
+.menu{
+    display: none;
+}
 .home{
     background-color: #E6533C;
     border-radius: 30px;
@@ -76,9 +84,13 @@ nav h3{
 }
 
 .banner{
+    display: flex;
+    justify-content: space-between;
     max-width: 75%;
     margin: 0 auto;
-    margin-top: 100px; 
+    
+    /* border:2px solid #E6533C; */
+    
 }
 
 .text{
@@ -86,7 +98,7 @@ nav h3{
     flex-direction: column;
     gap: 20px;
     max-width: 60%;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .text .bnr-title{
     color: white;
@@ -98,6 +110,7 @@ nav h3{
 .shape{
     font-family: 'Miama', sans-serif;
     font-size: 100px;
+    font-weight: 200;
 }
 .bnr-des{
     width: 400px;
@@ -125,14 +138,14 @@ nav h3{
     padding:11px 35px ;
 }
 .bnr-pic{
-    
-    position: absolute;
-    bottom: -5px;
-    left: 65%;
-    /* border: 2px solid tomato; */
+    position: relative;
+    bottom: 0;
+    right: 0;
 }
 .bnr-pic img{
-    width: 90%;  
+    height: 100%;
+    width:100%;  
+    /* border:1px solid #E6533C; */
 }
 .blurry-btn{
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -145,13 +158,12 @@ nav h3{
     text-align: left;
     display: flex;
     flex-direction: column;
-    
-
-}
+    border: ;
+    }
 .top{
     
-    right: -20px;
-    bottom:  320px;
+    right: -25px;
+    bottom:  370px;
     gap:2px;
 }
 .top h2{
@@ -167,9 +179,14 @@ nav h3{
     flex-direction: row;
     gap: 15px;
     align-items: center;
-    bottom: 70px;
-    left: -80px;
+    bottom: 60px;
+    left: -50px;
     padding: 15px 15px;
+}
+ .btn350{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .bottom h2{
     color: white;
@@ -184,5 +201,72 @@ nav h3{
     width: 35px;
     height: 35px;
     border-radius: 50%;
+}
+/* Header Responsive */
+
+@media screen and (max-width:576px){
+    header{
+        min-height: 100vh;
+    }
+    nav ul,li{
+        display: none;
+    }
+    nav{
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    nav h3{
+        font-size: 25px;
+        color: #E6533C;
+        font-style: italic;
+    }
+    .menu{
+        display:inline-block;
+        cursor: pointer;
+    }
+    .banner{
+        flex-direction: column;
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top: 80px;
+        gap: 50px; 
+        
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .text .bnr-title{
+        color: white;
+        font-size: 40px;
+        line-height: 45px;
+        width: 300px;
+        font-weight: 800;
+    }
+    .shape{
+        font-family: 'Miama', sans-serif;
+        font-size: 70px;
+        font-weight: 100;
+    }
+    
+    .bnr-des{
+        width: 280px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top{
+        bottom: 500px;
+        right: 15px;
+    }
+    .bottom{
+        left: 20px;
+        bottom: 300px;
+    }
+    
 }
 
