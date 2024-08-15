@@ -374,6 +374,151 @@ nav h3{
             width: 100%;
         }
     }
+/* Section-3  */
+.sec-3{
+    max-width: 100%;
+    
+    /* background-color: #222222; */
+    
+}
+.sec-3-con{
+    max-width:550px ;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.sec-3-con p{
+    text-align: center;
+    
+}
+.sec-3-all{
+    
+    max-width:75% ;
+    margin: 0  auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid tomato; */
+
+}
+.sec-3-bg{
+    max-width: 100%;
+    background-color: #222222;
+    padding: 30px 0;
+    
+}
+.sec-3 .table h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.table{
+    max-width: 50%;
+}
+.table th{
+    color:white;
+    
+}
+.table td{
+    font-size: 14px ;
+    color:rgba(255, 255, 255, 0.5) ;
+    font-weight: 300;
+}
+.table th,td{
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 14px 22px;
+}
+table{
+    border-collapse: collapse;
+}
+.form{
+    max-width: 50%;
+    /* border: 2px solid white; */
+    
+}
+.form .form-content h1{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+.form .main-form input[type="text"] {
+    padding: 14px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    /* width: 100%; */
+}
+.form .main-form input[type="number"]{
+    padding: 14px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.form .main-form input[type="submit"]{
+    border: none;
+    border-radius: 30px;
+    padding: 12px 35px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #E6533C;
+    display: grid;
+    grid-column: span 1.5;
+}
+.form .main-form form{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+#select{
+    display: grid;
+    grid-column: span 2;
+}
+
+
+
+/* Section-3 Responsive */
+@media screen and (max-width:576px){
+    .sec-3-all{
+        max-width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 5%;
+    }
+    .table,.form{
+        max-width: 100%;
+    }
+    .form form{
+       width: 50%;
+    }
+    .form .main-form input{
+        padding: 14px 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 8px;
+        /* width: 100%; */
+    }
+    .sec-3-con{
+        max-width: 85%;
+    }
+    .form .main-form form{
+        
+        grid-template-columns: repeat(2,95%);
+        
+    }
+
+}
+
+
+
+
+
 /* Section-4  */
 .sec-4{
     display: flex;
@@ -428,9 +573,52 @@ nav h3{
     }
 }
 /* Section-5  */
+.sec-5 .sec-5-con{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   
+}
+.sec-5 .pricing-cards{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
+.sec-5 .price-card{
+   width: 300px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    
+}
+.price-card h2{
+color: white;
+font-size: 30px;
+margin-bottom: 20px;
+}
+.price-card h1{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.price-card p{
+    color: white;
+}
+/* Section-5 Responsive */
+@media screen and (max-width:576px){
+    .pricing-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
 
 
 
